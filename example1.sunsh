@@ -1,0 +1,5 @@
+declare variable named example equals 0;
+if example is 0:
+    print 1;
+else:
+    print 0;
