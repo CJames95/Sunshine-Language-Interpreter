@@ -1,5 +1,6 @@
-declare variable named example equals 0;
-if example is 0:
+declare a variable named example1 that equals 0;
+declare a variable named example2 that equals "This is a string"; 
+if example1 is 0:
     print 1;
 else:
     print 0;

@@ -14,3 +14,10 @@
 *.enc
 *.idb
 *.pdb
+.vs/Interpreter/copilot-chat/1d0c42a1/V0_fa20ab2f-fe9c-4443-9a17-5d4fa0e73d19_Default
+*.vsidx
+*.ipch
+*.db
+.vs/Interpreter/v17/.suo
+*.exe
+*.txt
