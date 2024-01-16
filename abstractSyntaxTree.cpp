@@ -182,7 +182,7 @@ void ExecutionVisitor::visit(Integer& node) {
     last_evaluated_value = node.getInteger();
 }
 void ExecutionVisitor::visit(String& node) {
-    // unused
+    last_evaluated_value = node.getString();
 }
 void ExecutionVisitor::visit(Unary& node) {
     // unused

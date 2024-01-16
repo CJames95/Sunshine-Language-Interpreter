@@ -143,7 +143,13 @@ unique_ptr<Statement> Parser::statement() {
     }
     case 6: { // PRINT
         nextToken();
-        statement_1 = make_unique<PrintStatement>(new Integer(stoi(p_token.getToken())));
+		if (p_token.symbol().compare("Integer") == 0) {
+			new_expression = new Integer(stoi(p_token.getToken()));
+		}
+		else if (p_token.symbol().compare("Identifier") == 0) {
+			new_expression = new Identifier(p_token.getToken());
+		}
+        statement_1 = make_unique<PrintStatement>(new_expression);
         nextToken();
         if (p_token.getToken().compare(";") != 0) {
             // error: semicolon missing
